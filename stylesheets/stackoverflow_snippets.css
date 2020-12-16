@@ -128,3 +128,7 @@ hr {
    font-weight: 600;
    margin: .5em 0;
 }
+
+.answer ol li {
+   list-style: decimal;
+}
