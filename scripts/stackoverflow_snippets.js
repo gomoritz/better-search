@@ -1,40 +1,44 @@
-const extensionId = chrome.runtime.id   // this will throw an error if the script is loaded
-                                        // a second time on the same page
+const extensionId = chrome.runtime.id // this will throw an error if the script is loaded
+// a second time on the same page
 const port = chrome.extension.connect({
-    name: "stackoverflow-fetcher"
+    name: 'stackoverflow-fetcher',
 })
 
 let syntaxScriptInjected = false
 let syntaxScriptTries = 0
 
 port.onMessage.addListener(function (data) {
-    const pseudo = document.createElement("html")
+    const pseudo = document.createElement('html')
     pseudo.innerHTML = data.html
 
-    const questionTitle = pseudo.getElementsByClassName("question-hyperlink")[0].textContent;
-    const preferredAnswer = pseudo.getElementsByClassName("accepted-answer").length > 0
-        ? pseudo.getElementsByClassName("accepted-answer")[0]
-        : pseudo.getElementsByClassName("answer").length > 0
-            ? pseudo.getElementsByClassName("answer")[0]
+    const questionTitle = pseudo.getElementsByClassName('question-hyperlink')[0]
+        .textContent
+    const preferredAnswer =
+        pseudo.getElementsByClassName('accepted-answer').length > 0
+            ? pseudo.getElementsByClassName('accepted-answer')[0]
+            : pseudo.getElementsByClassName('answer').length > 0
+            ? pseudo.getElementsByClassName('answer')[0]
             : null
 
     if (preferredAnswer == null) {
-        console.log("No answer found, going for next stackoverflow result...")
+        console.log('No answer found, going for next stackoverflow result...')
         execute(data.result.index + 1)
         return
     }
 
-    const answerContent = preferredAnswer.getElementsByClassName("s-prose")[0]
-    answerContent.classList.add("answer-content")
+    const answerContent = preferredAnswer.getElementsByClassName('s-prose')[0]
+    answerContent.classList.add('answer-content')
 
-    for (let element of answerContent.getElementsByTagName("pre")) {
-        const copy = document.createElement("span")
-        copy.classList.add("copy-icon")
-        copy.innerText = "📝"
+    for (let element of answerContent.getElementsByTagName('pre')) {
+        const copy = document.createElement('span')
+        copy.classList.add('copy-icon')
+        copy.innerText = '📝'
         copy.onclick = async () => {
-            const code = element.getElementsByTagName("code")[0]
+            const code = element.getElementsByTagName('code')[0]
             const content = code.textContent
-            await navigator.clipboard.writeText(content.substring(0, content.length - 1))
+            await navigator.clipboard.writeText(
+                content.substring(0, content.length - 1)
+            )
         }
         element.append(copy)
     }
@@ -42,21 +46,21 @@ port.onMessage.addListener(function (data) {
     createSnippet(data.result.url, questionTitle, answerContent)
     syntaxHighlighting()
 
-    console.log("Found stackoverflow post: " + data.result.title)
+    console.log('Found stackoverflow post: ' + data.result.title)
 })
 
 function syntaxHighlighting() {
-    console.log("> Trying to enable syntax highlighting")
+    console.log('> Trying to enable syntax highlighting')
 
     syntaxScriptTries++
     if (syntaxScriptTries > 50)
-        return console.log("! Failed to many times, aborting...")
+        return console.log('! Failed to many times, aborting...')
 
     if (syntaxScriptInjected) {
-        const s = document.createElement('script');
-        document.head.appendChild(s);
-        s.innerHTML = "hljs.initHighlighting()"
-        console.log("+ Syntax highlighting enabled")
+        const s = document.createElement('script')
+        document.head.appendChild(s)
+        s.innerHTML = 'hljs.initHighlighting()'
+        console.log('+ Syntax highlighting enabled')
     } else {
         setTimeout(() => {
             syntaxHighlighting()
@@ -67,20 +71,21 @@ function syntaxHighlighting() {
 function execute(_startIndex) {
     let startIndex = _startIndex || 0
     const pathName = window.location.pathname
-    if (pathName !== "/search") return console.log("No search was performed")
+    if (pathName !== '/search') return console.log('No search was performed')
 
     const queryString = window.location.search
     const urlSearchParams = new URLSearchParams(queryString)
 
-    if (!urlSearchParams.has("q")) return console.log("No search param found")
+    if (!urlSearchParams.has('q')) return console.log('No search param found')
 
-    const results = [].slice.call(document.getElementsByClassName("yuRUbf"))
-        .map(element => {
+    const results = [].slice
+        .call(document.getElementsByClassName('yuRUbf'))
+        .map((element) => {
             const children = [].slice.call(element.firstChild.children)
             return {
                 url: element.firstChild.href,
                 title: children[1].textContent,
-                element: element
+                element: element,
             }
         })
 
@@ -93,14 +98,17 @@ function execute(_startIndex) {
         startIndex--
     }
 
-    const targetResult = results.find(res => new URL(res.url).host === "stackoverflow.com")
-    if (targetResult === undefined) return console.log("No result from stackoverflow")
+    const targetResult = results.find(
+        (res) => new URL(res.url).host === 'stackoverflow.com'
+    )
+    if (targetResult === undefined)
+        return console.log('No result from stackoverflow')
 
     port.postMessage(targetResult)
 }
 
 function injectScript(src, onload, onerror) {
-    const s = document.createElement('script');
+    const s = document.createElement('script')
     if (onerror) s.onerror = onerror
     if (onload) s.onload = onload
     document.head.appendChild(s)
@@ -108,18 +116,25 @@ function injectScript(src, onload, onerror) {
 }
 
 function injectStylesheet(href) {
-    const s = document.createElement('link');
-    s.setAttribute('rel', 'stylesheet');
-    s.setAttribute('href', href);
-    document.body.appendChild(s);
+    const s = document.createElement('link')
+    s.setAttribute('rel', 'stylesheet')
+    s.setAttribute('href', href)
+    document.body.appendChild(s)
 }
 
-injectScript("//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js", () => {
-    syntaxScriptInjected = true
-    console.log("The script has been injected!")
-})
-injectStylesheet('//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css')
+injectScript(
+    '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js',
+    () => {
+        syntaxScriptInjected = true
+        console.log('The script has been injected!')
+    }
+)
+injectStylesheet(
+    '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css'
+)
 
-injectStylesheet(`chrome-extension://${extensionId}/stylesheets/google_darkmode.css`)
+injectStylesheet(
+    `chrome-extension://${extensionId}/stylesheets/google_darkmode.css`
+)
 
 execute()

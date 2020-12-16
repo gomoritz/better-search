@@ -4,30 +4,40 @@
 
     --b-2: #333333;
     --b-3: #717171;
-    --b-4: #8E8E8E;
+    --b-4: #8e8e8e;
 
-    --b-5: #CCCCCC;
-    --b-6: #D8D8D8;
-    --text: #F3F3F3;
+    --b-5: #cccccc;
+    --b-6: #d8d8d8;
+    --text: #f3f3f3;
 
-    --link: #5596FF;
+    --link: #5596ff;
 }
 
-body, #extabar, .yg51vc, .sfbg, #hdtb {
+body,
+#extabar,
+.yg51vc,
+.sfbg,
+#hdtb {
     background-color: var(--background) !important;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-a, a:visited, a:link, a.fl:link, .WpKAof {
+a,
+a:visited,
+a:link,
+a.fl:link,
+.WpKAof {
     color: var(--link);
     text-decoration: none;
 }
 
 .aajZCb {
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+        0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
-.yuRUbf a, .yuRUbf a:visited {
+.yuRUbf a,
+.yuRUbf a:visited {
     color: var(--link);
 }
 
@@ -39,7 +49,8 @@ a, a:visited, a:link, a.fl:link, .WpKAof {
     background-color: var(--b-1);
 }
 
-.RNNXgb, .kp-blk {
+.RNNXgb,
+.kp-blk {
     border: 1px solid var(--b-2) !important;
 }
 
@@ -47,7 +58,9 @@ a, a:visited, a:link, a.fl:link, .WpKAof {
     border-top: 1px solid var(--b-2) !important;
 }
 
-.gLFyf, .b0KoTc, .GmE3X {
+.gLFyf,
+.b0KoTc,
+.GmE3X {
     color: rgba(255, 255, 255, 0.87) !important;
 }
 
@@ -55,11 +68,20 @@ a, a:visited, a:link, a.fl:link, .WpKAof {
     border-left: 1px solid var(--b-2);
 }
 
-.lBbtTb, .fbar p, .fbar a, #fsettl, #fsett a {
+.lBbtTb,
+.fbar p,
+.fbar a,
+#fsettl,
+#fsett a {
     color: var(--b-3);
 }
 
-.IsZvec, .LHJvCe, .fbar a:hover, #fsett a:hover, #Wprf1b, .iUh30 span {
+.IsZvec,
+.LHJvCe,
+.fbar a:hover,
+#fsett a:hover,
+#Wprf1b,
+.iUh30 span {
     color: var(--b-4) !important;
 }
 
@@ -80,11 +102,22 @@ a, a:visited, a:link, a.fl:link, .WpKAof {
     border-bottom: 1px solid var(--b-2);
 }
 
-.aCOpRe em, .st em, .dyjrff, .hide-focus-ring, .hdtb-mitem .hdtb-dd-b, .hdtb-mitem a, .GshZze, .gb_qa svg, .gb_Cc svg, .gb_Zc .gb_fe, .gb_Oc .gb_fe {
-    color: #A09C97;
+.aCOpRe em,
+.st em,
+.dyjrff,
+.hide-focus-ring,
+.hdtb-mitem .hdtb-dd-b,
+.hdtb-mitem a,
+.GshZze,
+.gb_qa svg,
+.gb_Cc svg,
+.gb_Zc .gb_fe,
+.gb_Oc .gb_fe {
+    color: #a09c97;
 }
 
-.aajZCb, .RNNXgb {
+.aajZCb,
+.RNNXgb {
     background: var(--b-1) !important;
 }
 
@@ -94,10 +127,14 @@ a, a:visited, a:link, a.fl:link, .WpKAof {
 }
 
 .JolIg {
-    color: #DFDEDB;
+    color: #dfdedb;
 }
 
-.sbl1, .P1usbc, .mmxugd, .hDeAhf, .YyVfkd {
+.sbl1,
+.P1usbc,
+.mmxugd,
+.hDeAhf,
+.YyVfkd {
     color: inherit;
 }
 
@@ -110,7 +147,10 @@ a, a:visited, a:link, a.fl:link, .WpKAof {
     border-top: 1px solid var(--b-2);
 }
 
-.GHDvEf, .GHDvEf:hover, .GHDvEf.selected, .GHDvEf.selected:hover {
+.GHDvEf,
+.GHDvEf:hover,
+.GHDvEf.selected,
+.GHDvEf.selected:hover {
     background-color: transparent;
 }
 
@@ -121,12 +161,14 @@ a, a:visited, a:link, a.fl:link, .WpKAof {
 
 .g:not(.kno-kp, .y8URue .g):hover {
     background: var(--b-1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Host part of the result breadcrumb */
-cite, cite a:link, cite a:visited {
-   color: #DFDEDB !important;
+cite,
+cite a:link,
+cite a:visited {
+    color: #dfdedb !important;
 }
 
 #hdtb-msb .hdtb-mitem.hdtb-msel {
@@ -134,15 +176,20 @@ cite, cite a:link, cite a:visited {
     border-bottom: 2px solid var(--link) !important;
 }
 
-.hdtb-mitem .hdtb-dd-b, .hdtb-mitem.hdtb-msel, .hdtb-mitem a {
+.hdtb-mitem .hdtb-dd-b,
+.hdtb-mitem.hdtb-msel,
+.hdtb-mitem a {
     padding-bottom: 14px;
 }
 
-.Xeztj, .etUWZd, .YSlUOe {
+.Xeztj,
+.etUWZd,
+.YSlUOe {
     background: var(--background);
 }
 
-.MGqjK, .MXl0lf {
+.MGqjK,
+.MXl0lf {
     background-color: var(--b-1);
     border: 1px solid var(--b-2);
 }
@@ -151,7 +198,8 @@ cite, cite a:link, cite a:visited {
     color: var(--b-4);
 }
 
-.MXl0lf:hover, .WpKAof:hover {
+.MXl0lf:hover,
+.WpKAof:hover {
     background-color: var(--b-2);
 }
 
@@ -160,15 +208,17 @@ cite, cite a:link, cite a:visited {
 }
 
 .minidiv .sfbg {
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
 }
 
-.kno-ftr a, .kno-ftr a:visited, .kno-ftr a:link {
+.kno-ftr a,
+.kno-ftr a:visited,
+.kno-ftr a:link {
     color: unset;
 }
 
 div#hplogo a img {
-    content: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
+    content: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png');
     width: 272px;
     height: 201px;
     padding-top: 109px !important;
@@ -189,81 +239,67 @@ center > input {
     color: var(--text);
 }
 
-.WGYX8, .KPV9xf, .CNf3nf, .HErFVb {
-   background: var(--b-1) !important;
-   border: 1px solid var(--b-2) !important;
-   color: var(--b-6) !important;
+.WGYX8,
+.KPV9xf,
+.CNf3nf,
+.HErFVb {
+    background: var(--b-1) !important;
+    border: 1px solid var(--b-2) !important;
+    color: var(--b-6) !important;
 }
 
-.KPV9xf:hover, .CNf3nf:hover, .HErFVb:hover {
-   background: var(--b-3) !important;
-   border: 1px solid var(--b-2) !important;
-   color: var(--b-1) !important;
+.KPV9xf:hover,
+.CNf3nf:hover,
+.HErFVb:hover {
+    background: var(--b-3) !important;
+    border: 1px solid var(--b-2) !important;
+    color: var(--b-1) !important;
 }
 
 .pb5vrc {
-   background: var(--b-2);
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
     background: var(--b-2);
-    border-radius: 4px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background-color: var(--b-3);
-    border-radius: 4px;
-    transition: all .3s;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--b-4);
 }
 
 /* Information snippet */
 
 .rhscol .I6TXqe {
-    border: 1px solid #3B3B3B;
+    border: 1px solid #3b3b3b;
     background-color: #282828;
 }
 
 .vIPkDb {
-    border-bottom: 1px solid #3B3B3B !important;
+    border-bottom: 1px solid #3b3b3b !important;
 }
 
 .kno-ecr-pt {
-    color: var(--text)
+    color: var(--text);
 }
 
-.wwUB2c, .wwUB2c .chJdMe {
-    color: var(--b-5)
+.wwUB2c,
+.wwUB2c .chJdMe {
+    color: var(--b-5);
 }
 
 .hb8SAc {
-    color: var(--b-5)
+    color: var(--b-5);
 }
 
 .w8qArf .fl {
     color: var(--text) !important;
 }
 
-body, #extabar, .yg51vc, .sfbg, #hdtb {
-    color: var(--b-5)
+body,
+#extabar,
+.yg51vc,
+.sfbg,
+#hdtb {
+    color: var(--b-5);
 }
 
 /* News - Headlines */
 
 .cv2VAd {
-    border: 1px solid #3B3B3B;
+    border: 1px solid #3b3b3b;
 }
 
 g-inner-card {
@@ -286,7 +322,8 @@ g-inner-card {
     margin: 7px 0 0 10px;
 }
 
-.cbphWd { /*kp-blk cUnQKe Wnoohf OJXvsb*/
+.cbphWd {
+    /*kp-blk cUnQKe Wnoohf OJXvsb*/
     margin-left: 10px !important;
 }
 
@@ -305,4 +342,25 @@ g-inner-card {
 
 .y8URue {
     padding-left: 10px !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--b-2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--b-3);
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--b-4);
 }
