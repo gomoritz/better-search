@@ -1,3 +1,3 @@
-<img src="./images/Group 11.png">
+<img src="./images/banner.png">
 
 > Enhance your experience with search engines like Google and DuckDuckGo!
