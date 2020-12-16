@@ -23,9 +23,10 @@
             ],
             "css": [
                 "stylesheets/google_darkmode.css",
-                "stylesheets/stackoverflow_snippets.css"
+                "stylesheets/snippets.css"
             ],
             "js": [
+                "scripts/snippets.js",
                 "scripts/stackoverflow_snippets.js"
             ]
         }

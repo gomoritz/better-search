@@ -24,34 +24,10 @@ port.onMessage.addListener(function (data) {
         return
     }
 
-    const answerElement = document.createElement("div")
-    answerElement.classList.add("answer")
-
-    const answerHeader = document.createElement("div")
-    answerHeader.classList.add("answer-header")
-
-    const sourceElement = document.createElement("div")
-    sourceElement.classList.add("source")
-    sourceElement.innerHTML = `
-        <img src="https://stackoverflow.com/favicon.ico">
-        <a href="${data.result.url}">${data.result.url}</a>
-    `
-
-    const answerTitleElement = document.createElement("a")
-    answerTitleElement.href = data.result.url
-    answerTitleElement.innerText = questionTitle
-    answerTitleElement.classList.add("answer-title")
-
     const answerContent = preferredAnswer.getElementsByClassName("s-prose")[0]
     answerContent.classList.add("answer-content")
 
-    answerHeader.append(sourceElement)
-    answerHeader.append(answerTitleElement)
-
-    answerElement.append(answerHeader)
-    answerElement.append(answerContent)
-
-    for (let element of answerElement.getElementsByTagName("pre")) {
+    for (let element of answerContent.getElementsByTagName("pre")) {
         const copy = document.createElement("span")
         copy.classList.add("copy-icon")
         copy.innerText = "📝"
@@ -63,10 +39,7 @@ port.onMessage.addListener(function (data) {
         element.append(copy)
     }
 
-    const target = document.getElementById("rhs")
-    const after = target.children[2];
-    target.insertBefore(answerElement, after)
-
+    createSnippet(data.result.url, questionTitle, answerContent)
     syntaxHighlighting()
 
     console.log("Found stackoverflow post: " + data.result.title)

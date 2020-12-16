@@ -9,7 +9,7 @@
    }
 }
 
-.answer {
+.snippet {
    background-color: #282828;
    border-radius: 8px;
    box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
@@ -19,23 +19,23 @@
    word-wrap: break-word;
 }
 
-.answer ol, .answer ul {
+.snippet ol, .snippet ul {
    padding-left: 20px;
    margin: inherit;
 }
 
-.source {
+.snippet-source {
    display: flex;
    align-items: center;
    margin-bottom: 5px;
 }
 
-.source img {
+.snippet-source img {
    width: 20px;
    height: 20px;
 }
 
-.source a {
+.snippet-source a {
    color: #EEEBE7 !important;
    font-size: 14px;
    white-space: nowrap;
@@ -45,24 +45,24 @@
    padding-left: 8px;
 }
 
-.answer-title {
+.snippet-title {
    font-size: 1.6rem;
    font-weight: 600;
    color: #EEEEEE !important;
    text-decoration: none !important;
 }
 
-.answer-header {
+.snippet-header {
    padding: 15px;
    border-bottom: 1px solid #3B3B3B;
 }
 
-.answer-content {
+.snippet-content {
    padding: 8px 15px 15px;
    color: #EEEEEE;
 }
 
-pre {
+.snippet pre {
    background-color: #212121 !important;
    white-space: pre-wrap;
    text-overflow: clip;
@@ -80,55 +80,55 @@ pre {
    opacity: 0;
 }
 
-pre:hover > .copy-icon {
+.snippet pre:hover > .copy-icon {
    opacity: 80%;
    cursor: pointer;
 }
 
-code {
+.snippet code {
    background-color: #212121 !important;
 }
 
-blockquote {
+.snippet blockquote {
    border-left: 3px solid #5E5E5E;
    margin: 1.5em 10px;
    padding: 0.5em 20px;
 }
 
-hr {
+.snippet hr {
    border: none;
    border-top: 2px solid #5E5E5E;
 }
 
-.answer a {
+.snippet a {
    color: #5596FF;
    text-decoration: underline;
 }
 
-.answer h1 {
+.snippet h1 {
    font-size: 1.6rem;
    font-weight: 600;
    margin: .5em 0;
 }
 
-.answer h2 {
+.snippet h2 {
    font-size: 1.4rem;
    font-weight: 600;
    margin: .5em 0;
 }
 
-.answer h3 {
+.snippet h3 {
    font-size: 1.2rem;
    font-weight: 600;
    margin: .5em 0;
 }
 
-.answer h4 {
+.snippet h4 {
    font-size: 1.1rem;
    font-weight: 600;
    margin: .5em 0;
 }
 
-.answer ol li {
+.snippet ol li {
    list-style: decimal;
 }
