@@ -188,6 +188,22 @@ center > input {
    color: var(--text);
 }
 
+.WGYX8, .KPV9xf, .CNf3nf, .HErFVb {
+   background: var(--b-1) !important;
+   border: 1px solid var(--b-2) !important;
+   color: var(--b-6) !important;
+}
+
+.KPV9xf:hover, .CNf3nf:hover, .HErFVb:hover {
+   background: var(--b-3) !important;
+   border: 1px solid var(--b-2) !important;
+   color: var(--b-1) !important;
+}
+
+.pb5vrc {
+   background: var(--b-2);
+}
+
 /* width */
 ::-webkit-scrollbar {
    width: 8px;
