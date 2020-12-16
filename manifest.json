@@ -15,6 +15,20 @@
     "icons": {
         "256": "images/icon_96.png"
     },
-    "web_accessible_resources": ["stylesheets/*.css"],
+    "web_accessible_resources": ["stylesheets/*.css", "scripts/*.js"],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com/*"
+            ],
+            "css": [
+                "stylesheets/google_darkmode.css",
+                "stylesheets/stackoverflow_snippets.css"
+            ],
+            "js": [
+                "scripts/stackoverflow_snippets.js"
+            ]
+        }
+    ],
     "manifest_version": 2
 }
