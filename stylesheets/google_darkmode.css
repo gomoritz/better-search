@@ -211,3 +211,12 @@ center > input {
 ::-webkit-scrollbar-thumb:hover {
    background-color: var(--b-4);
 }
+
+.rhscol .I6TXqe {
+   border: 1px solid #191919;
+   background-color: #282828;
+}
+
+.vIPkDb {
+   border-bottom: 1px solid #191919 !important;
+}
