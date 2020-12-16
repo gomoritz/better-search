@@ -1,4 +1,5 @@
-const extensionId = chrome.runtime.id
+const extensionId = chrome.runtime.id   // this will throw an error if the script is loaded
+                                        // a second time on the same page
 const port = chrome.extension.connect({
     name: "stackoverflow-fetcher"
 })
@@ -146,7 +147,6 @@ injectScript("//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min
 })
 injectStylesheet('//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css')
 
-injectStylesheet(`chrome-extension://${extensionId}/stylesheets/stackoverflow_snippets.css`)
 injectStylesheet(`chrome-extension://${extensionId}/stylesheets/google_darkmode.css`)
 
 execute()
