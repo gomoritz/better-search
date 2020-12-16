@@ -229,6 +229,8 @@ center > input {
     background-color: var(--b-4);
 }
 
+/* Information snippet */
+
 .rhscol .I6TXqe {
     border: 1px solid #3B3B3B;
     background-color: #282828;
@@ -256,4 +258,52 @@ center > input {
 
 body, #extabar, .yg51vc, .sfbg, #hdtb {
     color: var(--b-5)
+}
+
+/* News - Headlines */
+
+.cv2VAd {
+    border: 1px solid #3B3B3B;
+}
+
+g-inner-card {
+    background: #282828;
+}
+
+/* Videos */
+
+.zLOdYe {
+    margin-left: 10px !important;
+}
+
+.MGqjK {
+    border-radius: 7px;
+}
+
+
+/* Similar questions */
+
+.JolIg {
+    margin: 7px 0 0 10px;
+}
+
+.cbphWd { /*kp-blk cUnQKe Wnoohf OJXvsb*/
+    margin-left: 10px !important;
+}
+
+.kp-blk.cUnQKe {
+    border-radius: 7px;
+}
+
+.akqY6 {
+    display: none;
+}
+
+.wrSo4 {
+    padding-top: 7px !important;
+    padding-left: 530px !important;
+}
+
+.y8URue {
+    padding-left: 10px !important;
 }
