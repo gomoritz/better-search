@@ -1,3 +1,3 @@
 # better-search
-Open source chrome extension for google.
+Open source chrome extension.
 
