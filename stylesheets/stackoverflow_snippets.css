@@ -1,0 +1,130 @@
+@keyframes popup {
+   from {
+      transform: scale(.7);
+      opacity: 0;
+   }
+   to {
+      transform: scale(1.0);
+      opacity: 100%;
+   }
+}
+
+.answer {
+   background-color: #282828;
+   border-radius: 8px;
+   box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+   max-width: 90%;
+   animation: popup .2s cubic-bezier(0.25, 1, 0.5, 1);
+   margin-bottom: 20px;
+   word-wrap: break-word;
+}
+
+.answer ol, .answer ul {
+   padding-left: 20px;
+   margin: inherit;
+}
+
+.source {
+   display: flex;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+.source img {
+   width: 20px;
+   height: 20px;
+}
+
+.source a {
+   color: #EEEBE7 !important;
+   font-size: 14px;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   vertical-align: baseline;
+   padding-left: 8px;
+}
+
+.answer-title {
+   font-size: 1.6rem;
+   font-weight: 600;
+   color: #EEEEEE !important;
+   text-decoration: none !important;
+}
+
+.answer-header {
+   padding: 15px;
+   border-bottom: 1px solid #3B3B3B;
+}
+
+.answer-content {
+   padding: 8px 15px 15px;
+   color: #EEEEEE;
+}
+
+pre {
+   background-color: #212121 !important;
+   white-space: pre-wrap;
+   text-overflow: clip;
+   border-radius: 4px;
+   padding: 4px;
+   position: relative;
+}
+
+.copy-icon {
+   font-size: .9em;
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   transition: opacity .1s;
+   opacity: 0;
+}
+
+pre:hover > .copy-icon {
+   opacity: 80%;
+   cursor: pointer;
+}
+
+code {
+   background-color: #212121 !important;
+}
+
+blockquote {
+   border-left: 3px solid #5E5E5E;
+   margin: 1.5em 10px;
+   padding: 0.5em 20px;
+}
+
+hr {
+   border: none;
+   border-top: 2px solid #5E5E5E;
+}
+
+.answer a {
+   color: #5596FF;
+   text-decoration: underline;
+}
+
+.answer h1 {
+   font-size: 1.6rem;
+   font-weight: 600;
+   margin: .5em 0;
+}
+
+.answer h2 {
+   font-size: 1.4rem;
+   font-weight: 600;
+   margin: .5em 0;
+}
+
+.answer h3 {
+   font-size: 1.2rem;
+   font-weight: 600;
+   margin: .5em 0;
+}
+
+.answer h4 {
+   font-size: 1.1rem;
+   font-weight: 600;
+   margin: .5em 0;
+}
