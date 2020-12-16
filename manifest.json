@@ -2,9 +2,18 @@
     "name": "Better Search",
     "description": "Enhances your experience with search engines like Google and DuckDuckGo",
     "version": "1.0",
-    "permissions": ["activeTab", "declarativeContent", "webNavigation", "storage", "https://www.google.com/", "https://stackoverflow.com/"],
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "webNavigation",
+        "storage",
+        "https://www.google.com/",
+        "https://stackoverflow.com/"
+    ],
     "background": {
-        "scripts": ["background.js"],
+        "scripts": [
+            "background.js"
+        ],
         "persistent": false
     },
     "page_action": {
@@ -15,7 +24,10 @@
     "icons": {
         "256": "images/icon_96.png"
     },
-    "web_accessible_resources": ["stylesheets/*.css", "scripts/*.js"],
+    "web_accessible_resources": [
+        "stylesheets/*.css",
+        "scripts/*.js"
+    ],
     "content_scripts": [
         {
             "matches": [
