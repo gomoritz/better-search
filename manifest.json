@@ -27,7 +27,7 @@
         {
             "matches": ["https://www.google.com/*", "https://google.com/*"],
             "css": ["stylesheets/google_darkmode.css", "stylesheets/snippets.css"],
-            "js": ["scripts/snippets.js", "scripts/stackoverflow_snippets.js"]
+            "js": ["scripts/snippets/create.js", "scripts/snippets/stackoverflow.js"]
         }
     ],
     "manifest_version": 2
