@@ -1,0 +1,12 @@
+body {
+    width: 400px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+}
+
+#so {
+    text-transform: capitalize;
+}
