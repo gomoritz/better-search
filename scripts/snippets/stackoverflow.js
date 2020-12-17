@@ -36,9 +36,9 @@ port.onMessage.addListener(function (data) {
             const code = element.getElementsByTagName('code')[0]
             const content = code.textContent
             await navigator.clipboard.writeText(content.substring(0, content.length - 1))
-            e.target.style.transform = 'scale(1.2)'
+            copy.style.transform = 'scale(1.2)'
             setTimeout(() => {
-                e.target.style.transform = 'scale(1)'
+                copy.style.transform = 'scale(1)'
             }, 150)
         }
         element.append(copy)
