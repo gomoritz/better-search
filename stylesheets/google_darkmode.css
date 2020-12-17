@@ -290,7 +290,7 @@ g-inner-card {
     margin: 7px 0 0 10px;
 }
 
-.cbphWd { /*kp-blk cUnQKe Wnoohf OJXvsb*/
+.cbphWd {
     margin-left: 10px !important;
 }
 
@@ -341,4 +341,14 @@ g-inner-card {
 
 .y8Jpof.pPLc9e.kpQuGf {
     border-top: 1px solid #3B3B3B !important;
+}
+
+/* Every subtitle */
+
+g-inner-card.zf84ud {
+    background: var(--background) !important;
+}
+
+.s {
+    color: var(--b-4) !important;
 }
