@@ -123,4 +123,7 @@ injectStylesheet(
 
 injectStylesheet(`chrome-extension://${extensionId}/stylesheets/google_darkmode.css`)
 
-execute()
+chrome.storage.sync.get(['stackoverflow'], (result) => {
+    console.log('Value currently is ' + result.stackoverflow)
+    if (result.stackoverflow == 'enabled') execute()
+})
