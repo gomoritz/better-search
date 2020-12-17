@@ -32,10 +32,14 @@ port.onMessage.addListener(function (data) {
         const copy = document.createElement('span')
         copy.classList.add('copy-icon')
         copy.innerText = '📝'
-        copy.onclick = async () => {
+        copy.onclick = async (e) => {
             const code = element.getElementsByTagName('code')[0]
             const content = code.textContent
             await navigator.clipboard.writeText(content.substring(0, content.length - 1))
+            copy.style.transform = 'scale(1.2)'
+            setTimeout(() => {
+                copy.style.transform = 'scale(1)'
+            }, 150)
         }
         element.append(copy)
     }
