@@ -13,8 +13,8 @@ function createSnippet(source, title, content, favicon) {
     const snippetSource = document.createElement('div')
     snippetSource.classList.add('snippet-source')
     snippetSource.innerHTML = `
-        <img src="${favicon}" alt="favicon">
-        <a href="${source}">${source}</a>
+        <img src='${favicon}' alt='favicon'>
+        <a href='${source}'>${source}</a>
     `
 
     const snippetTitle = document.createElement('a')
@@ -23,6 +23,12 @@ function createSnippet(source, title, content, favicon) {
     snippetTitle.classList.add('snippet-title')
 
     content.classList.add('snippet-content')
+    Array.from(content.getElementsByTagName('img')).forEach((element) =>
+        element.addEventListener('click', (event) => {
+            event.preventDefault()
+            return element.classList.toggle('zoomed')
+        })
+    )
 
     snippetHeader.append(snippetSource)
     snippetHeader.append(snippetTitle)

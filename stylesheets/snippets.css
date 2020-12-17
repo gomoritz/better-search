@@ -135,7 +135,19 @@
     list-style: decimal;
 }
 
-.snippet img {
-    max-width: 100%;
+.snippet-content img {
+    display: block;
+    margin: 20px auto;
+    max-width: 70%;
     height: auto;
+    transition: all 0.2s ease-out;
+    border-radius: 5px;
+    cursor: zoom-in;
+}
+
+.snippet-content img.zoomed {
+    transform: scale(2.0);
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95);
+    box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+    cursor: zoom-out;
 }
