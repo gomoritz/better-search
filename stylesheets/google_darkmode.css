@@ -23,6 +23,7 @@ body,
     background-color: var(--background) !important;
     color: #ffffff !important;
 }
+
 .eFM0qc,
 .GHDvEf {
     background-color: var(--background) !important;
@@ -40,7 +41,7 @@ a.fl:link,
 
 .aajZCb {
     box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0, 0, 0, 0.2),
-        0 10px 10px -5px rgba(0, 0, 0, 0.1) !important;
+    0 10px 10px -5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .yuRUbf a,
@@ -315,6 +316,7 @@ g-inner-card {
     border-bottom: 1px solid var(--b-5) !important;
     border-radius: 0px !important;
 }
+
 /* single heading borders */
 .EPLo7b {
     border-top: 1px solid var(--b-5) !important;
@@ -390,10 +392,12 @@ g-inner-card {
 .pla-unit-img-container {
     background-color: #dfdedb !important;
 }
+
 /* item price */
 .e10twf {
     color: #c5c5c5 !important;
 }
+
 /* seller */
 .VZqTOd {
     color: #b3b3b3 !important;
@@ -422,6 +426,7 @@ g-inner-card {
 .u8H8Fd {
     box-shadow: none !important;
 }
+
 /* comparison websites */
 .xasAs {
     color: var(--text-2) !important;
@@ -602,7 +607,7 @@ g-inner-card.zf84ud {
     color: var(--text) !important;
 }
 
-.NpTOee  {
+.NpTOee {
     color: var(--b-6) !important;
 }
 
