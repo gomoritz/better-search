@@ -4,15 +4,15 @@
 
     --b-2: #333333;
     --b-3: #717171;
-    --b-4: #8E8E8E;
+    --b-4: #8e8e8e;
 
-    --b-5: #CCCCCC;
-    --b-6: #D8D8D8;
+    --b-5: #cccccc;
+    --b-6: #d8d8d8;
 
-    --text: #F3F3F3;
-    --text-2: #E2E2E2;
+    --text: #f3f3f3;
+    --text-2: #e2e2e2;
 
-    --link: #5596FF;
+    --link: #5596ff;
 }
 
 body,
@@ -370,7 +370,7 @@ g-inner-card {
     color: var(--b-6);
 }
 
-/* 
+/*
     Google ads
 */
 .VqFMTc {
@@ -383,8 +383,8 @@ g-inner-card {
     color: var(--text-2) !important;
 }
 
-/* 
-   SHOPPING 
+/*
+   SHOPPING
 */
 /* preview image */
 .pla-unit-img-container {
