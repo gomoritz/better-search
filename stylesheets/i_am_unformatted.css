@@ -1,0 +1,11 @@
+html {
+    overflow-wrap: anywhere;
+}
+
+a {
+    cursor: zoom-out;
+    transform: unset;
+}
+b {
+    border: #3b3b3b;
+}
