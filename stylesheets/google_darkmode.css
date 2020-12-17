@@ -368,6 +368,63 @@ g-inner-card {
     color: var(--b-6);
 }
 
+/* 
+    Google ads
+*/
+.VqFMTc {
+    background-color: unset !important;
+    color: #9a9898 !important;
+}
+
+.qzEoUe,
+.N6sL8d {
+    color: var(--text-2) !important;
+}
+
+/* 
+   SHOPPING 
+*/
+/* preview image */
+.pla-unit-img-container {
+    background-color: #dfdedb !important;
+}
+/* item price */
+.e10twf {
+    color: #c5c5c5 !important;
+}
+/* seller */
+.VZqTOd {
+    color: #b3b3b3 !important;
+}
+
+/* shipping information */
+.pla-extensions-container {
+    color: #70757a !important;
+}
+
+/* item background */
+.cu-container .mnr-c {
+    background-color: var(--b-1) !important;
+    box-shadow: none !important;
+    border: 1px solid #191919 !important;
+}
+
+/* reset styling of hidden item(s) */
+.S4EObe .exaJlc,
+.S4EObe.zFtmEd {
+    background: none !important;
+}
+
+/* reset box shadow */
+.DUkiH.cu-container,
+.u8H8Fd {
+    box-shadow: none !important;
+}
+/* comparison websites */
+.xasAs {
+    color: var(--text-2) !important;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
@@ -389,18 +446,17 @@ g-inner-card {
     background-color: var(--b-4);
 }
 
-
 /* Knowledge Panel claim*/
 
 .H73aad {
     background-color: #282828;
-    border: 1px solid #3B3B3B;
+    border: 1px solid #3b3b3b;
     margin-top: 8px;
     margin-left: 13px;
 }
 
 .jleFbf {
-    color: var(--b-6)
+    color: var(--b-6);
 }
 
 /* Results for */
@@ -418,7 +474,7 @@ g-inner-card {
 }
 
 .y8Jpof.pPLc9e.kpQuGf {
-    border-top: 1px solid #3B3B3B !important;
+    border-top: 1px solid #3b3b3b !important;
 }
 
 /* Every subtitle */
@@ -443,8 +499,8 @@ g-inner-card.zf84ud {
 
 .gb_sb.gb_sb {
     background-color: var(--b-2) !important;
-    border: 1px solid #3B3B3B;
-    color: var(--b-4)
+    border: 1px solid #3b3b3b;
+    color: var(--b-4);
 }
 
 .gb_mb {
@@ -456,7 +512,7 @@ g-inner-card.zf84ud {
 }
 
 .gb_Jb {
-    border-top: 1px solid #3B3B3B !important;
+    border-top: 1px solid #3b3b3b !important;
 }
 
 .gb_wb.gb_wb {
@@ -464,22 +520,25 @@ g-inner-card.zf84ud {
     color: var(--b-4) !important;
 }
 
-.gb_kb>svg.gb_lb, .gb_xb>svg.gb_yb, .gb_zb>svg.gb_Ab {
+.gb_kb > svg.gb_lb,
+.gb_xb > svg.gb_yb,
+.gb_zb > svg.gb_Ab {
     color: var(--b-4) !important;
 }
 
 .gb_Cb {
-    border-bottom: 1px solid #3B3B3B !important;
-    border-top: 1px solid #3B3B3B !important;
+    border-bottom: 1px solid #3b3b3b !important;
+    border-top: 1px solid #3b3b3b !important;
 }
 
 .gb_Db.gb_Db {
-    color: var(--b-4)
+    color: var(--b-4);
 }
 
-.gb_Db.gb_Db, .gb_Eb.gb_Eb {
+.gb_Db.gb_Db,
+.gb_Eb.gb_Eb {
     background-color: #282828;
-    border: 1px solid #3B3B3B;
+    border: 1px solid #3b3b3b;
 }
 
 .gb_1b {
