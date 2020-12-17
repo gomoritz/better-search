@@ -19,16 +19,21 @@ body,
 .sfbg,
 #hdtb {
     background-color: var(--background) !important;
-    color: #ffffff;
+    color: #ffffff !important;
+}
+.eFM0qc,
+.GHDvEf {
+    background-color: var(--background) !important;
 }
 
 a,
 a:visited,
 a:link,
 a.fl:link,
-.WpKAof {
-    color: var(--link);
-    text-decoration: none;
+.WpKAof,
+.SW5pqf {
+    color: var(--link) !important;
+    text-decoration: none !important;
 }
 
 .aajZCb {
@@ -45,8 +50,14 @@ a.fl:link,
     border-bottom: 1px solid var(--b-2) !important;
 }
 
+/* related questions | container */
 .kp-blk {
-    background-color: var(--b-1);
+    background-color: var(--b-1) !important;
+}
+
+/* related questions | heading */
+.JolIg {
+    color: #dfdedb !important;
 }
 
 .RNNXgb,
@@ -113,7 +124,7 @@ a.fl:link,
 .gb_Cc svg,
 .gb_Zc .gb_fe,
 .gb_Oc .gb_fe {
-    color: #a09c97;
+    color: #a09c97 !important;
 }
 
 .aajZCb,
@@ -124,10 +135,6 @@ a.fl:link,
 .GshZze:not(.hdtb-tl-sel):hover {
     background: var(--b-1) !important;
     border-color: var(--b-2);
-}
-
-.JolIg {
-    color: #dfdedb;
 }
 
 .sbl1,
@@ -190,12 +197,12 @@ cite a:visited {
 
 .MGqjK,
 .MXl0lf {
-    background-color: var(--b-1);
-    border: 1px solid var(--b-2);
+    background-color: var(--b-1) !important;
+    border: 1px solid var(--b-2) !important;
 }
 
 .MXl0lf span {
-    color: var(--b-4);
+    color: var(--b-4) !important;
 }
 
 .MXl0lf:hover,
@@ -263,8 +270,8 @@ center > input {
 /* Information snippet */
 
 .rhscol .I6TXqe {
-    border: 1px solid #3b3b3b;
-    background-color: #282828;
+    border: 1px solid #3b3b3b !important;
+    background-color: #282828 !important;
 }
 
 .vIPkDb {
@@ -272,38 +279,47 @@ center > input {
 }
 
 .kno-ecr-pt {
-    color: var(--text);
+    color: var(--text) !important;
 }
 
 .wwUB2c,
 .wwUB2c .chJdMe {
-    color: var(--b-5);
+    color: var(--b-4) !important;
 }
 
 .hb8SAc {
-    color: var(--b-5);
+    color: var(--b-5) !important;
 }
 
 .w8qArf .fl {
     color: var(--text) !important;
 }
 
-body,
-#extabar,
-.yg51vc,
-.sfbg,
-#hdtb {
-    color: var(--b-5);
-}
-
 /* News - Headlines */
 
 .cv2VAd {
-    border: 1px solid #3b3b3b;
+    border: 1px solid #3b3b3b !important;
 }
 
 g-inner-card {
-    background: #282828;
+    background: #282828 !important;
+}
+
+/* headline and related container */
+.qmv19b,
+.AUiS2 {
+    border: none !important;
+    border-top: 1px solid var(--b-5) !important;
+    border-bottom: 1px solid var(--b-5) !important;
+    border-radius: 0px !important;
+}
+/* single heading borders */
+.EPLo7b {
+    border-top: 1px solid var(--b-5);
+}
+
+.wqg8ad {
+    color: #70757a !important;
 }
 
 /* Videos */
@@ -313,13 +329,13 @@ g-inner-card {
 }
 
 .MGqjK {
-    border-radius: 7px;
+    border-radius: 7px !important;
 }
 
 /* Similar questions */
 
 .JolIg {
-    margin: 7px 0 0 10px;
+    margin: 7px 0 0 10px !important;
 }
 
 .cbphWd {
@@ -342,6 +358,11 @@ g-inner-card {
 
 .y8URue {
     padding-left: 10px !important;
+}
+
+/* Related searches */
+.eJ7tvc {
+    color: var(--b-6);
 }
 
 /* Scrollbar */
