@@ -5,3 +5,10 @@ chrome.extension.onConnect.addListener(function (port) {
         port.postMessage({ result, html })
     })
 })
+
+// set default settings when the extension is installed
+chrome.runtime.onInstalled.addListener((details) => {
+    if (details.reason === 'install') {
+        chrome.storage.sync.set({ stackoverflow: 'enabled' })
+    }
+})

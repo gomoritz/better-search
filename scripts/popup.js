@@ -13,10 +13,10 @@ function getCurrentTab() {
 /* Get stackoverflow visibility status */
 chrome.storage.sync.get(['stackoverflow'], (result) => {
     stackoverflowOptionButton.dataset.status = result.stackoverflow
-    if (result.stackoverflow == 'disabled') {
-        stackoverflowOptionButton.innerText = 'Enable'
-    } else {
+    if (result.stackoverflow === 'enabled') {
         stackoverflowOptionButton.innerText = 'Disable'
+    } else {
+        stackoverflowOptionButton.innerText = 'Enable'
     }
 })
 
@@ -24,7 +24,7 @@ chrome.storage.sync.get(['stackoverflow'], (result) => {
 stackoverflowOptionButton.addEventListener('click', async (e) => {
     console.log(e.target.dataset)
 
-    if (e.target.dataset.status == 'enabled') {
+    if (e.target.dataset.status === 'enabled') {
         e.target.dataset.status = 'disabled'
         e.target.innerText = 'Enable'
         chrome.storage.sync.set({ stackoverflow: 'disabled' }, null)
@@ -37,6 +37,6 @@ stackoverflowOptionButton.addEventListener('click', async (e) => {
     const currentTab = await getCurrentTab()
     const currentUrl = new URL(currentTab.url)
 
-    if (currentUrl.host == 'www.google.com' && currentUrl.pathname == '/search')
+    if (currentUrl.host === 'www.google.com' && currentUrl.pathname === '/search')
         chrome.tabs.reload()
 })
