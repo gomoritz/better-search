@@ -32,5 +32,6 @@ jobs:
         uses: creyD/prettier_action@v3.1
         with: 
           prettier_options: --write **/*.{js,md,css,html}
+          commit_message: ":art: Formatted code with Prettier"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
