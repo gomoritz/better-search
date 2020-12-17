@@ -352,3 +352,62 @@ g-inner-card.zf84ud {
 .s {
     color: var(--b-4) !important;
 }
+
+/* Google Account popup */
+
+.gb_F {
+    background: #282828;
+}
+
+.gb_jb {
+    background: var(--b-2) !important;
+}
+
+.gb_sb.gb_sb {
+    background-color: var(--b-2) !important;
+    border: 1px solid #3B3B3B;
+    color: var(--b-4)
+}
+
+.gb_mb {
+    color: var(--text) !important;
+}
+
+.gb_ob {
+    color: var(--b-4) !important;
+}
+
+.gb_Jb {
+    border-top: 1px solid #3B3B3B !important;
+}
+
+.gb_wb.gb_wb {
+    background-color: #282828 !important;
+    color: var(--b-4) !important;
+}
+
+.gb_kb>svg.gb_lb, .gb_xb>svg.gb_yb, .gb_zb>svg.gb_Ab {
+    color: var(--b-4) !important;
+}
+
+.gb_Cb {
+    border-bottom: 1px solid #3B3B3B !important;
+    border-top: 1px solid #3B3B3B !important;
+}
+
+.gb_Db.gb_Db {
+    color: var(--b-4)
+}
+
+.gb_Db.gb_Db, .gb_Eb.gb_Eb {
+    background-color: #282828;
+    border: 1px solid #3B3B3B;
+}
+
+.gb_1b {
+    color: var(--b-4) !important;
+}
+
+.gb_3b {
+    color: var(--b-3) !important;
+}
