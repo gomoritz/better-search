@@ -1,6 +1,11 @@
-html { overflow-wrap:anywhere }
+html {
+    overflow-wrap: anywhere;
+}
 
-a { cursor: zoom-out
-;
-transform:
-      unset} b {border:                              #3B3B3B}
+a {
+    cursor: zoom-out;
+    transform: unset;
+}
+b {
+    border: #3b3b3b;
+}
