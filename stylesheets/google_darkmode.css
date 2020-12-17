@@ -4,13 +4,15 @@
 
     --b-2: #333333;
     --b-3: #717171;
-    --b-4: #8e8e8e;
+    --b-4: #8E8E8E;
 
-    --b-5: #cccccc;
-    --b-6: #d8d8d8;
-    --text: #f3f3f3;
+    --b-5: #CCCCCC;
+    --b-6: #D8D8D8;
 
-    --link: #5596ff;
+    --text: #F3F3F3;
+    --text-2: #E2E2E2;
+
+    --link: #5596FF;
 }
 
 body,
