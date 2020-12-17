@@ -1,18 +1,18 @@
 :root {
-    --background: #191919;
-    --b-1: #282828;
+    --background: #191919 !important;
+    --b-1: #282828 !important;
 
-    --b-2: #333333;
-    --b-3: #717171;
-    --b-4: #8e8e8e;
+    --b-2: #333333 !important;
+    --b-3: #717171 !important;
+    --b-4: #8e8e8e !important;
 
-    --b-5: #cccccc;
-    --b-6: #d8d8d8;
+    --b-5: #cccccc !important;
+    --b-6: #d8d8d8 !important;
 
-    --text: #f3f3f3;
-    --text-2: #e2e2e2;
+    --text: #f3f3f3 !important;
+    --text-2: #e2e2e2 !important;
 
-    --link: #5596ff;
+    --link: #5596ff !important;
 }
 
 body,
@@ -23,6 +23,7 @@ body,
     background-color: var(--background) !important;
     color: #ffffff !important;
 }
+
 .eFM0qc,
 .GHDvEf {
     background-color: var(--background) !important;
@@ -40,12 +41,12 @@ a.fl:link,
 
 .aajZCb {
     box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0, 0, 0, 0.2),
-        0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    0 10px 10px -5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .yuRUbf a,
 .yuRUbf a:visited {
-    color: var(--link);
+    color: var(--link) !important;
 }
 
 #hdtb {
@@ -78,7 +79,7 @@ a.fl:link,
 }
 
 .FqnKTc {
-    border-left: 1px solid var(--b-2);
+    border-left: 1px solid var(--b-2) !important;
 }
 
 .lBbtTb,
@@ -86,7 +87,7 @@ a.fl:link,
 .fbar a,
 #fsettl,
 #fsett a {
-    color: var(--b-3);
+    color: var(--b-3) !important;
 }
 
 .IsZvec,
@@ -99,20 +100,20 @@ a.fl:link,
 }
 
 .unknown_loc {
-    background-color: var(--b-4);
+    background-color: var(--b-4) !important;
 }
 
 .d2IKib {
-    color: #fc5c65;
+    color: #fc5c65 !important;
 }
 
 .f6F9Be {
-    background-color: var(--background);
-    border-top: 1px solid var(--b-2);
+    background-color: var(--background) !important;
+    border-top: 1px solid var(--b-2) !important;
 }
 
 .b2hzT {
-    border-bottom: 1px solid var(--b-2);
+    border-bottom: 1px solid var(--b-2) !important;
 }
 
 .aCOpRe em,
@@ -136,7 +137,7 @@ a.fl:link,
 
 .GshZze:not(.hdtb-tl-sel):hover {
     background: var(--b-1) !important;
-    border-color: var(--b-2);
+    border-color: var(--b-2) !important;
 }
 
 .sbl1,
@@ -152,25 +153,25 @@ a.fl:link,
 }
 
 .xtSCL {
-    margin: 0;
-    border-top: 1px solid var(--b-2);
+    margin: 0 !important;
+    border-top: 1px solid var(--b-2) !important;
 }
 
 .GHDvEf,
 .GHDvEf:hover,
 .GHDvEf.selected,
 .GHDvEf.selected:hover {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .g:not(.kno-kp, .y8URue .g) {
-    padding: 8px;
-    border-radius: 5px;
+    padding: 8px !important;
+    border-radius: 5px !important;
 }
 
 .g:not(.kno-kp, .y8URue .g):hover {
-    background: var(--b-1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    background: var(--b-1) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Host part of the result breadcrumb */
@@ -188,13 +189,13 @@ cite a:visited {
 .hdtb-mitem .hdtb-dd-b,
 .hdtb-mitem.hdtb-msel,
 .hdtb-mitem a {
-    padding-bottom: 14px;
+    padding-bottom: 14px !important;
 }
 
 .Xeztj,
 .etUWZd,
 .YSlUOe {
-    background: var(--background);
+    background: var(--background) !important;
 }
 
 .MGqjK,
@@ -209,15 +210,15 @@ cite a:visited {
 
 .MXl0lf:hover,
 .WpKAof:hover {
-    background-color: var(--b-2);
+    background-color: var(--b-2) !important;
 }
 
 .VibNM {
-    border-top: 1px solid var(--b-2);
+    border-top: 1px solid var(--b-2) !important;
 }
 
 .minidiv .sfbg {
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4) !important;
 }
 
 .kno-ftr a,
@@ -227,15 +228,15 @@ cite a:visited {
 }
 
 div#hplogo a img {
-    content: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png');
-    width: 272px;
-    height: 201px;
+    content: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png') !important;
+    width: 272px !important;
+    height: 201px !important;
     padding-top: 109px !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 .fJOQGe {
-    display: none;
+    display: none !important;
 }
 
 center > input {
@@ -245,7 +246,7 @@ center > input {
 }
 
 #hptl a {
-    color: var(--text);
+    color: var(--text) !important;
 }
 
 .WGYX8,
@@ -266,7 +267,7 @@ center > input {
 }
 
 .pb5vrc {
-    background: var(--b-2);
+    background: var(--b-2) !important;
 }
 
 /* Information snippet */
@@ -315,9 +316,10 @@ g-inner-card {
     border-bottom: 1px solid var(--b-5) !important;
     border-radius: 0px !important;
 }
+
 /* single heading borders */
 .EPLo7b {
-    border-top: 1px solid var(--b-5);
+    border-top: 1px solid var(--b-5) !important;
 }
 
 .wqg8ad {
@@ -335,7 +337,7 @@ g-inner-card {
 }
 
 .Q2MMlc {
-    padding-top: 8px;
+    padding-top: 8px !important;
 }
 
 /* Similar questions */
@@ -349,11 +351,11 @@ g-inner-card {
 }
 
 .kp-blk.cUnQKe {
-    border-radius: 7px;
+    border-radius: 7px !important;
 }
 
 .akqY6 {
-    display: none;
+    display: none !important;
 }
 
 .wrSo4 {
@@ -367,7 +369,7 @@ g-inner-card {
 
 /* Related searches */
 .eJ7tvc {
-    color: var(--b-6);
+    color: var(--b-6) !important;
 }
 
 /*
@@ -390,10 +392,12 @@ g-inner-card {
 .pla-unit-img-container {
     background-color: #dfdedb !important;
 }
+
 /* item price */
 .e10twf {
     color: #c5c5c5 !important;
 }
+
 /* seller */
 .VZqTOd {
     color: #b3b3b3 !important;
@@ -422,6 +426,7 @@ g-inner-card {
 .u8H8Fd {
     box-shadow: none !important;
 }
+
 /* comparison websites */
 .xasAs {
     color: var(--text-2) !important;
@@ -429,36 +434,36 @@ g-inner-card {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 8px !important;
+    height: 8px !important;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--b-2);
-    border-radius: 4px;
+    background: var(--b-2) !important;
+    border-radius: 4px !important;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--b-3);
-    border-radius: 4px;
-    transition: all 0.3s;
+    background-color: var(--b-3) !important;
+    border-radius: 4px !important;
+    transition: all 0.3s !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--b-4);
+    background-color: var(--b-4) !important;
 }
 
 /* Knowledge Panel claim*/
 
 .H73aad {
-    background-color: #282828;
-    border: 1px solid #3b3b3b;
-    margin-top: 8px;
-    margin-left: 13px;
+    background-color: #282828 !important;
+    border: 1px solid #3b3b3b !important;
+    margin-top: 8px !important;
+    margin-left: 13px !important;
 }
 
 .jleFbf {
-    color: var(--b-6);
+    color: var(--b-6) !important;
 }
 
 /* Results for */
@@ -492,7 +497,7 @@ g-inner-card.zf84ud {
 /* Google Account popup */
 
 .gb_F {
-    background: #282828;
+    background: #282828 !important;
 }
 
 .gb_jb {
@@ -501,8 +506,8 @@ g-inner-card.zf84ud {
 
 .gb_sb.gb_sb {
     background-color: var(--b-2) !important;
-    border: 1px solid #3b3b3b;
-    color: var(--b-4);
+    border: 1px solid #3b3b3b !important;
+    color: var(--b-4) !important;
 }
 
 .gb_mb {
@@ -534,13 +539,13 @@ g-inner-card.zf84ud {
 }
 
 .gb_Db.gb_Db {
-    color: var(--b-4);
+    color: var(--b-4) !important;
 }
 
 .gb_Db.gb_Db,
 .gb_Eb.gb_Eb {
-    background-color: #282828;
-    border: 1px solid #3b3b3b;
+    background-color: #282828 !important;
+    border: 1px solid #3b3b3b !important;
 }
 
 .gb_1b {
@@ -549,4 +554,63 @@ g-inner-card.zf84ud {
 
 .gb_3b {
     color: var(--b-3) !important;
+}
+
+/* Maps snippet */
+
+.wlxxf {
+    color: var(--b-5) !important;
+}
+
+.mqts7c {
+    background: #282828 !important;
+    color: var(--b-6) !important;
+    border-radius: 5px !important;
+    border: 1px solid #3b3b3b !important;
+}
+
+.VTNskf {
+    border-bottom: 1px solid #3b3b3b !important;
+}
+
+.mJ2Mod {
+    border-bottom: 1px solid #3b3b3b !important;
+}
+
+.mJ2Mod {
+    border-top: 1px solid #3b3b3b !important;
+}
+
+.ab_button {
+    border-radius: 5px !important;
+    border: 1px solid #3b3b3b !important;
+    background: #282828 !important;
+}
+
+.YhemCb {
+    color: var(--b-6) !important;
+}
+
+.LrzXr {
+    color: var(--b-6) !important;
+}
+
+.ElGe3c {
+    color: var(--b-5) !important;
+}
+
+.wVTXVd {
+    color: var(--b-5) !important;
+}
+
+.kplpt {
+    color: var(--text) !important;
+}
+
+.NpTOee {
+    color: var(--b-6) !important;
+}
+
+.u9sbk {
+    color: var(--text) !important;
 }
