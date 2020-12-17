@@ -71,6 +71,7 @@
     border-radius: 4px;
     padding: 4px;
     position: relative;
+    overflow-wrap: anywhere;
 }
 
 .copy-icon {
@@ -146,7 +147,7 @@
 }
 
 .snippet-content img.zoomed {
-    transform: scale(2.0);
+    transform: scale(2);
     --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95);
     box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
     cursor: zoom-out;
