@@ -11,8 +11,7 @@ port.onMessage.addListener(function (data) {
     const pseudo = document.createElement('html')
     pseudo.innerHTML = data.html
 
-    const questionTitle = pseudo.getElementsByClassName('question-hyperlink')[0]
-        .textContent
+    const questionTitle = pseudo.getElementsByClassName('question-hyperlink')[0].textContent
     const preferredAnswer =
         pseudo.getElementsByClassName('accepted-answer').length > 0
             ? pseudo.getElementsByClassName('accepted-answer')[0]
@@ -36,9 +35,7 @@ port.onMessage.addListener(function (data) {
         copy.onclick = async () => {
             const code = element.getElementsByTagName('code')[0]
             const content = code.textContent
-            await navigator.clipboard.writeText(
-                content.substring(0, content.length - 1)
-            )
+            await navigator.clipboard.writeText(content.substring(0, content.length - 1))
         }
         element.append(copy)
     }
@@ -53,8 +50,7 @@ function syntaxHighlighting() {
     console.log('> Trying to enable syntax highlighting')
 
     syntaxScriptTries++
-    if (syntaxScriptTries > 50)
-        return console.log('! Failed to many times, aborting...')
+    if (syntaxScriptTries > 50) return console.log('! Failed to many times, aborting...')
 
     if (syntaxScriptInjected) {
         const s = document.createElement('script')
@@ -78,16 +74,14 @@ function execute(_startIndex) {
 
     if (!urlSearchParams.has('q')) return console.log('No search param found')
 
-    const results = [].slice
-        .call(document.getElementsByClassName('yuRUbf'))
-        .map((element) => {
-            const children = [].slice.call(element.firstChild.children)
-            return {
-                url: element.firstChild.href,
-                title: children[1].textContent,
-                element: element,
-            }
-        })
+    const results = [].slice.call(document.getElementsByClassName('yuRUbf')).map((element) => {
+        const children = [].slice.call(element.firstChild.children)
+        return {
+            url: element.firstChild.href,
+            title: children[1].textContent,
+            element: element,
+        }
+    })
 
     for (let index = 0; index < results.length; index++) {
         results[index].index = index
@@ -98,11 +92,8 @@ function execute(_startIndex) {
         startIndex--
     }
 
-    const targetResult = results.find(
-        (res) => new URL(res.url).host === 'stackoverflow.com'
-    )
-    if (targetResult === undefined)
-        return console.log('No result from stackoverflow')
+    const targetResult = results.find((res) => new URL(res.url).host === 'stackoverflow.com')
+    if (targetResult === undefined) return console.log('No result from stackoverflow')
 
     port.postMessage(targetResult)
 }
@@ -122,19 +113,14 @@ function injectStylesheet(href) {
     document.body.appendChild(s)
 }
 
-injectScript(
-    '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js',
-    () => {
-        syntaxScriptInjected = true
-        console.log('The script has been injected!')
-    }
-)
+injectScript('//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js', () => {
+    syntaxScriptInjected = true
+    console.log('The script has been injected!')
+})
 injectStylesheet(
     '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css'
 )
 
-injectStylesheet(
-    `chrome-extension://${extensionId}/stylesheets/google_darkmode.css`
-)
+injectStylesheet(`chrome-extension://${extensionId}/stylesheets/google_darkmode.css`)
 
 execute()
