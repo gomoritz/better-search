@@ -79,7 +79,7 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    transition: opacity 0.1s;
+    transition: opacity 0.25s, transform 0.15s ease;
     opacity: 0;
 }
 
