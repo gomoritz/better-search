@@ -280,6 +280,10 @@ g-inner-card {
     border-radius: 7px;
 }
 
+.Q2MMlc {
+    padding-top: 8px;
+}
+
 /* Similar questions */
 
 .JolIg {
@@ -307,6 +311,34 @@ g-inner-card {
     padding-left: 10px !important;
 }
 
-.Q2MMlc {
-    padding-top: 8px;
+
+/* Knowledge Panel claim*/
+
+.H73aad {
+    background-color: #282828;
+    border: 1px solid #3B3B3B;
+    margin-top: 8px;
+    margin-left: 13px;
+}
+
+.jleFbf {
+    color: var(--b-6)
+}
+
+/* Results for */
+
+#rhs .nGydZ .garHBe {
+    color: var(--text) !important;
+}
+
+.k4DMHe .xXEKkb {
+    color: var(--b-6) !important;
+}
+
+#rhs .cwUqwd {
+    color: var(--b-3) !important;
+}
+
+.y8Jpof.pPLc9e.kpQuGf {
+    border-top: 1px solid #3B3B3B !important;
 }
