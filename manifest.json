@@ -25,7 +25,7 @@
     "web_accessible_resources": ["stylesheets/*.css", "scripts/*.js"],
     "content_scripts": [
         {
-            "matches": ["https://www.google.com/*"],
+            "matches": ["https://www.google.com/*", "https://google.com/*"],
             "css": ["stylesheets/google_darkmode.css", "stylesheets/snippets.css"],
             "js": ["scripts/snippets.js", "scripts/stackoverflow_snippets.js"]
         }
