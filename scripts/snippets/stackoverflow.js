@@ -44,11 +44,19 @@ port.onMessage.addListener(function (data) {
         element.append(copy)
     }
 
+    sanitizeAnswerContent(answerContent)
     createSnippet(data.result.url, questionTitle, answerContent)
     syntaxHighlighting()
 
     console.log('Found stackoverflow post: ' + data.result.title)
 })
+
+function sanitizeAnswerContent(root) {
+    const elementsWithClass = root.querySelectorAll(".snippet")
+    for (element of elementsWithClass) {
+        element.classList.remove("snippet")
+    }
+}
 
 function syntaxHighlighting() {
     console.log('> Trying to enable syntax highlighting')
@@ -124,8 +132,6 @@ injectScript('//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min
 injectStylesheet(
     '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css'
 )
-
-injectStylesheet(`chrome-extension://${extensionId}/stylesheets/google_darkmode.css`)
 
 chrome.storage.sync.get(['stackoverflow'], (result) => {
     console.log('Value currently is ' + result.stackoverflow)

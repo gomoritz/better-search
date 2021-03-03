@@ -37,6 +37,22 @@ function createSnippet(source, title, content, favicon) {
     snippet.append(content)
 
     const target = document.getElementById('rhs')
-    const after = target.children[2]
-    target.insertBefore(snippet, after)
+    if (target == null) {
+        createTarget().appendChild(snippet)
+    } else {
+        const after = target.children[2]
+        target.insertBefore(snippet, after)
+    }
+}
+
+function createTarget() {
+    const element = document.createElement("div")
+    element.classList.add("TQc1id", "rhstc4")
+    element.id = "rhs"
+
+    const parent = document.getElementById("rcnt")
+    const lastChild = parent.lastChild
+
+    parent.insertBefore(element, lastChild)
+    return element
 }

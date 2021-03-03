@@ -7,8 +7,8 @@
         "declarativeContent",
         "webNavigation",
         "storage",
-        "https://www.google.com/",
-        "https://stackoverflow.com/"
+        "https://www.google.com/*",
+        "https://stackoverflow.com/*"
     ],
     "background": {
         "scripts": ["background.js"],
@@ -27,7 +27,7 @@
     "content_scripts": [
         {
             "matches": ["https://www.google.com/*", "https://google.com/*"],
-            "css": ["stylesheets/google_darkmode.css", "stylesheets/snippets.css"],
+            "css": ["stylesheets/snippets.css"],
             "js": ["scripts/snippets/create.js", "scripts/snippets/stackoverflow.js"]
         }
     ],
