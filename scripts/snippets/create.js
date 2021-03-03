@@ -46,11 +46,11 @@ function createSnippet(source, title, content, favicon) {
 }
 
 function createTarget() {
-    const element = document.createElement("div")
-    element.classList.add("TQc1id", "rhstc4")
-    element.id = "rhs"
+    const element = document.createElement('div')
+    element.classList.add('TQc1id', 'rhstc4')
+    element.id = 'rhs'
 
-    const parent = document.getElementById("rcnt")
+    const parent = document.getElementById('rcnt')
     const lastChild = parent.lastChild
 
     parent.insertBefore(element, lastChild)

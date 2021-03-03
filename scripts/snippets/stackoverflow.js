@@ -52,9 +52,9 @@ port.onMessage.addListener(function (data) {
 })
 
 function sanitizeAnswerContent(root) {
-    const elementsWithClass = root.querySelectorAll(".snippet")
+    const elementsWithClass = root.querySelectorAll('.snippet')
     for (element of elementsWithClass) {
-        element.classList.remove("snippet")
+        element.classList.remove('snippet')
     }
 }
 
