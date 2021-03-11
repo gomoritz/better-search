@@ -1,2 +1,6 @@
 /.idea/
 .vscode
+/scripts/snippets/create.js
+/scripts/snippets/stackoverflow.js
+/scripts/popup.js
+/background.js
