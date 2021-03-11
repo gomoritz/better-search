@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo.json",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "target": "ES2020"
+  },
+  "include": [
+    "**/*"
+  ]
+}

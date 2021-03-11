@@ -1,5 +1,7 @@
+// @ts-ignore
 const extensionId = chrome.runtime.id // this will throw an error if the script is loaded
 // a second time on the same page
+// @ts-ignore
 const port = chrome.extension.connect({
     name: 'stackoverflow-fetcher',
 })
@@ -34,7 +36,7 @@ port.onMessage.addListener(function (data) {
         copy.innerText = '📝'
         copy.onclick = async (e) => {
             const code = element.getElementsByTagName('code')[0]
-            const content = code.textContent
+            const content = code.textContent as string
             await navigator.clipboard.writeText(content.substring(0, content.length - 1))
             copy.style.transform = 'scale(1.2)'
             setTimeout(() => {
@@ -45,7 +47,7 @@ port.onMessage.addListener(function (data) {
     }
 
     sanitizeAnswerContent(answerContent)
-    createSnippet(data.result.url, questionTitle, answerContent)
+    createSnippet(data.result.url, questionTitle, answerContent, null)
     syntaxHighlighting()
 
     console.log('Found stackoverflow post: ' + data.result.title)
@@ -53,7 +55,7 @@ port.onMessage.addListener(function (data) {
 
 function sanitizeAnswerContent(root) {
     const elementsWithClass = root.querySelectorAll('.snippet')
-    for (element of elementsWithClass) {
+    for (const element of elementsWithClass) {
         element.classList.remove('snippet')
     }
 }
@@ -76,8 +78,9 @@ function syntaxHighlighting() {
     }
 }
 
-function execute(_startIndex) {
+function execute(_startIndex: number | null) {
     let startIndex = _startIndex || 0
+
     const pathName = window.location.pathname
     if (pathName !== '/search') return console.log('No search was performed')
 
@@ -110,7 +113,7 @@ function execute(_startIndex) {
     port.postMessage(targetResult)
 }
 
-function injectScript(src, onload, onerror) {
+function injectScript(src, onload) {
     const s = document.createElement('script')
     if (onerror) s.onerror = onerror
     if (onload) s.onload = onload
@@ -133,7 +136,8 @@ injectStylesheet(
     '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css'
 )
 
+// @ts-ignore
 chrome.storage.sync.get(['stackoverflow'], (result) => {
     console.log('Value currently is ' + result.stackoverflow)
-    if (result.stackoverflow == 'enabled') execute()
+    if (result.stackoverflow == 'enabled') execute(null)
 })

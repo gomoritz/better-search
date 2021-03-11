@@ -24,9 +24,9 @@ function createSnippet(source, title, content, favicon) {
 
     content.classList.add('snippet-content')
     Array.from(content.getElementsByTagName('img')).forEach((element) =>
-        element.addEventListener('click', (event) => {
+        (element as HTMLImageElement).addEventListener('click', (event) => {
             event.preventDefault()
-            return element.classList.toggle('zoomed')
+            return (element as HTMLImageElement).classList.toggle('zoomed')
         })
     )
 
@@ -50,9 +50,9 @@ function createTarget() {
     element.classList.add('TQc1id', 'rhstc4')
     element.id = 'rhs'
 
-    const parent = document.getElementById('rcnt')
-    const lastChild = parent.lastChild
+    const parent = document.getElementById('rcnt') as HTMLDivElement;
+    const lastChild = parent.lastChild;
 
-    parent.insertBefore(element, lastChild)
+    (parent as HTMLDivElement).insertBefore(element, lastChild)
     return element
 }
