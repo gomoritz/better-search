@@ -27,7 +27,7 @@
     background-color: var(--color-1);
     border-radius: 8px;
     box-shadow: 0 0 var(--color-2), 0 0 var(--color-2), 0 20px 25px -5px var(--color-3),
-    0 10px 10px -5px var(--color-11);
+        0 10px 10px -5px var(--color-11);
     max-width: 30vw;
     animation: popup 0.2s cubic-bezier(0.25, 1, 0.5, 1);
     margin-bottom: 20px;

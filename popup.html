@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel='stylesheet' href='./stylesheets/popup.css' />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./stylesheets/popup.css" />
 
-    <!-- Fonts -->
-    <link rel='preconnect' href='https://fonts.gstatic.com'>
-    <link href='https://fonts.googleapis.com/css2?family=Rubik&display=swap' rel='stylesheet'>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+    </head>
 
-</head>
+    <body>
+        <div>
+            <div class="option">
+                <h3 class="option-stackoverflow-title">Show stackoverflow snippets</h3>
+                <button
+                    id="option__stackoverflow"
+                    class="option-stackoverflow-button"
+                    data-status="enabled"
+                >
+                    Loading...
+                </button>
+            </div>
 
-<body>
-<div>
-    <div class='option'>
-        <h3 class='option-stackoverflow-title'>Show stackoverflow snippets</h3>
-        <button id='option__stackoverflow' class='option-stackoverflow-button' data-status='enabled'>Loading...</button>
-    </div>
+            <div class="option">
+                <h3 class="option-design-title">Dark design</h3>
+                <button id="option__theme" class="option-design-button" data-status="disabled">
+                    Loading...
+                </button>
+            </div>
+        </div>
 
-    <div class='option'>
-        <h3 class='option-design-title'>Dark design</h3>
-        <button id='option__theme' class='option-design-button' data-status='disabled'>Loading...</button>
-    </div>
-</div>
-
-<script src='scripts/popup.js'></script>
-</body>
+        <script src="scripts/popup.js"></script>
+    </body>
 </html>
