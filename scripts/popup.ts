@@ -83,6 +83,15 @@ designOptionButton.addEventListener('click', async (e) => {
         document.documentElement.style.setProperty('--color-fg', '#c6c6c6')
     }
 
+    // @ts-ignore
+    chrome.tabs.getSelected(null, function(tab) {
+        let code = 'window.location.reload();'
+        // @ts-ignore
+        chrome.tabs.executeScript(tab.id, {
+            code: code
+        })
+    })
+
 })
 
 // @ts-ignore
