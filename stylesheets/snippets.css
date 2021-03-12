@@ -9,11 +9,25 @@
     }
 }
 
+:root {
+    --color-1: #282828;
+    --color-2: #0000;
+    --color-3: rgba(0, 0, 0, 0.2);
+    --color-4: #eeebe7;
+    --color-5: #eeeeee;
+    --color-6: #3b3b3b;
+    --color-7: #212121;
+    --color-8: #5e5e5e;
+    --color-9: #5596ff;
+    --color-10: rgba(0, 0, 0, 0.95);
+    --color-11: rgba(0, 0, 0, 0.1);
+}
+
 .snippet {
-    background-color: #282828;
+    background-color: var(--color-1);
     border-radius: 8px;
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0, 0, 0, 0.2),
-        0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 var(--color-2), 0 0 var(--color-2), 0 20px 25px -5px var(--color-3),
+    0 10px 10px -5px var(--color-11);
     max-width: 30vw;
     animation: popup 0.2s cubic-bezier(0.25, 1, 0.5, 1);
     margin-bottom: 20px;
@@ -38,7 +52,7 @@
 }
 
 .snippet-source a {
-    color: #eeebe7 !important;
+    color: var(--color-4) !important;
     font-size: 14px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -50,22 +64,22 @@
 .snippet-title {
     font-size: 1.6rem;
     font-weight: 600;
-    color: #eeeeee !important;
+    color: var(--color-5) !important;
     text-decoration: none !important;
 }
 
 .snippet-header {
     padding: 15px;
-    border-bottom: 1px solid #3b3b3b;
+    border-bottom: 1px solid var(--color-6);
 }
 
 .snippet-content {
     padding: 8px 15px 15px;
-    color: #eeeeee;
+    color: var(--color-5);
 }
 
 .snippet pre {
-    background-color: #212121 !important;
+    background-color: var(--color-7) !important;
     white-space: pre-wrap;
     text-overflow: clip;
     border-radius: 4px;
@@ -89,22 +103,22 @@
 }
 
 .snippet code {
-    background-color: #212121 !important;
+    background-color: var(--color-7) !important;
 }
 
 .snippet blockquote {
-    border-left: 3px solid #5e5e5e;
+    border-left: 3px solid var(--color-8);
     margin: 1.5em 10px;
     padding: 0.5em 20px;
 }
 
 .snippet hr {
     border: none;
-    border-top: 2px solid #5e5e5e;
+    border-top: 2px solid var(--color-8);
 }
 
 .snippet a {
-    color: #5596ff;
+    color: var(--color-9);
     text-decoration: underline;
 }
 
@@ -148,7 +162,7 @@
 
 .snippet-content img.zoomed {
     transform: scale(2);
-    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95);
-    box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+    --tw-shadow: 0 25px 50px -12px var(--color-10);
+    box-shadow: 0 0 var(--color-2), 0 0 var(--color-2), var(--tw-shadow);
     cursor: zoom-out;
 }
