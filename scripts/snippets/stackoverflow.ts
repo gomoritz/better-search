@@ -138,6 +138,6 @@ injectStylesheet(
 
 // @ts-ignore
 chrome.storage.sync.get(['stackoverflow'], (result) => {
-    console.log('Value currently is ' + result.stackoverflow)
+    console.log('Value of stackoverflow currently is ' + result.stackoverflow)
     if (result.stackoverflow == 'enabled') execute(null)
 })
