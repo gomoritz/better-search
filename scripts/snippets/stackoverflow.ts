@@ -13,6 +13,8 @@ port.onMessage.addListener(function (data) {
     const pseudo = document.createElement('html')
     pseudo.innerHTML = data.html
 
+    updateColorVariables()
+
     const questionTitle = pseudo.getElementsByClassName('question-hyperlink')[0].textContent
     const preferredAnswer =
         pseudo.getElementsByClassName('accepted-answer').length > 0
@@ -132,12 +134,49 @@ injectScript('//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min
     syntaxScriptInjected = true
     console.log('The script has been injected!')
 })
-injectStylesheet(
-    '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css'
-)
 
 // @ts-ignore
 chrome.storage.sync.get(['stackoverflow'], (result) => {
     console.log('Value of stackoverflow currently is ' + result.stackoverflow)
     if (result.stackoverflow == 'enabled') execute(null)
 })
+
+function updateColorVariables() {
+    // @ts-ignore
+    chrome.storage.sync.get(['darkDesign'], (result) => {
+        console.log('Value of darkDesign currently is ' + result.darkDesign)
+        if (result.darkDesign == 'enabled') {
+            document.documentElement.style.setProperty('--color-1', '#282828')
+            document.documentElement.style.setProperty('--color-2', '#0000')
+            document.documentElement.style.setProperty('--color-3', 'rgba(0, 0, 0, 0.2)')
+            document.documentElement.style.setProperty('--color-4', '#eeebe7')
+            document.documentElement.style.setProperty('--color-5', '#eeeeee')
+            document.documentElement.style.setProperty('--color-6', '#3b3b3b')
+            document.documentElement.style.setProperty('--color-7', '#212121')
+            document.documentElement.style.setProperty('--color-8', '#5e5e5e')
+            document.documentElement.style.setProperty('--color-9', '#5596ff')
+            document.documentElement.style.setProperty('--color-10', 'rgba(0, 0, 0, 0.95)')
+            document.documentElement.style.setProperty('--color-11', 'rgba(0, 0, 0, 0.1)')
+
+            injectStylesheet(
+                '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css'
+            )
+        }else {
+            document.documentElement.style.setProperty('--color-1', '#ffffff')
+            document.documentElement.style.setProperty('--color-2', '#b6b6b6')
+            document.documentElement.style.setProperty('--color-3', '#b6b6b6')
+            document.documentElement.style.setProperty('--color-4', '#5596ff')
+            document.documentElement.style.setProperty('--color-5', '#212121')
+            document.documentElement.style.setProperty('--color-6', '#3b3b3b')
+            document.documentElement.style.setProperty('--color-7', '#e5e5e5')
+            document.documentElement.style.setProperty('--color-8', '#5e5e5e')
+            document.documentElement.style.setProperty('--color-9', '#5596ff')
+            document.documentElement.style.setProperty('--color-10', 'rgba(0, 0, 0, 0.95)')
+            document.documentElement.style.setProperty('--color-11', 'rgba(0, 0, 0, 0.1)')
+
+            injectStylesheet(
+                '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-light.min.css'
+            )
+        }
+    })
+}
