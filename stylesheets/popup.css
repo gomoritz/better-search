@@ -1,12 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+    --color-bg: #2a2a2a;
+    --color-fg: #c6c6c6;
+}
+
 body {
-    width: 400px;
+    font-family: "Rubik", sans-serif;
+    background: var(--color-bg);
+    width: 330px;
 }
 
-.option {
-    display: flex;
-    justify-content: space-between;
+.stackoverflow-snippet {
+    color: var(--color-fg);
+    font-size: 16px;
+
+    display: inline;
+    padding-right: 50px;
 }
 
-#so {
-    text-transform: capitalize;
+#option__stackoverflow {
+    height: 50px;
+
+    border: 2px solid var(--color-fg);
+    border-radius: 5px;
+    background: var(--color-bg);
+    color: var(--color-fg);
+}
+
+#option__stackoverflow:hover {
+    border: 2px solid var(--color-bg);
+    background: var(--color-fg);
+    color: var(--color-bg);
 }
